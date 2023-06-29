@@ -6,6 +6,12 @@ export default {
     //   grant_types: ['refresh_token', 'authorization_code'],
     //   redirect_uris: ['http://sso-client.dev/providers/7/open_id', 'http://sso-client.dev/providers/8/open_id'],
     // }
+    {
+      client_id: 'foo',
+      grant_types: ['implicit'],
+      redirect_uris: ['https://localhost:3001/cb'],
+      response_types: ['id_token'],
+    },
   ],
   interactions: {
     url(ctx, interaction) { // eslint-disable-line no-unused-vars
